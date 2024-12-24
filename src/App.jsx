@@ -80,7 +80,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <header className="flex justify-between items-center py-6">
             <div className="text-[#E1957D] text-3xl font-bold tracking-tight">
-              Glovo
+              Complete Market
             </div>
             <button className="bg-[#E1957D] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#008f73] transition-colors flex items-center gap-2">
               <User className="w-4 h-4" />
@@ -127,7 +127,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">
-            Top restaurants and more in Glovo
+            Top restaurants and more in Complete Market
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {restaurants.map((restaurant) => (
@@ -271,7 +271,7 @@ export default function Home() {
           <div className="w-16 h-16 mx-auto mb-6">
             <svg
               viewBox="0 0 24 24"
-              className="w-full h-full text-emerald-500"
+              className="w-full h-full text-[#E1957D]"
               fill="currentColor"
             >
               <path d="M11.7 15.3c-.7-.7-1.7-1.1-2.7-1.1s-2 .4-2.7 1.1c-.7.7-1.1 1.7-1.1 2.7 0 1 .4 2 1.1 2.7.7.7 1.7 1.1 2.7 1.1s2-.4 2.7-1.1c.7-.7 1.1-1.7 1.1-2.7 0-1-.4-2-1.1-2.7zm7.6-5.3c-.7-.7-1.7-1.1-2.7-1.1s-2 .4-2.7 1.1c-.7.7-1.1 1.7-1.1 2.7 0 1 .4 2 1.1 2.7.7.7 1.7 1.1 2.7 1.1s2-.4 2.7-1.1c.7-.7 1.1-1.7 1.1-2.7 0-1-.4-2-1.1-2.7z" />
@@ -286,7 +286,7 @@ export default function Home() {
             {/* Rider Card */}
             <div className="text-center">
               <div className="relative w-48 h-48 mx-auto mb-6">
-                <div className="absolute inset-0 bg-emerald-500 rounded-full"></div>
+                <div className="absolute inset-0 bg-[#E1957D] rounded-full"></div>
                 <img
                   src="https://images.unsplash.com/photo-1557180295-76eee20ae8aa?auto=format&fit=crop&q=80&w=1760"
                   alt="Delivery rider"
@@ -296,7 +296,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-4">Become a rider</h3>
               <p className="text-gray-600 mb-6">
                 Enjoy flexibility, freedom and competitive earnings by
-                delivering through Glovo.
+                delivering through Complete Market.
               </p>
               <button className="bg-[#E1957D] text-white px-6 py-3 rounded-full transition-colors">
                 Register here
@@ -306,7 +306,7 @@ export default function Home() {
             {/* Partner Card */}
             <div className="text-center">
               <div className="relative w-48 h-48 mx-auto mb-6">
-                <div className="absolute inset-0 bg-emerald-500 rounded-full"></div>
+                <div className="absolute inset-0 bg-[#E1957D] rounded-full"></div>
                 <img
                   src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=1954"
                   alt="Restaurant chef"
@@ -315,7 +315,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Become a partner</h3>
               <p className="text-gray-600 mb-6">
-                Grow with Glovo! Our technology and user base can help you boost
+                Grow with Complete Market! Our technology and user base can help you boost
                 sales and unlock new opportunities!
               </p>
               <button className="bg-[#E1957D] text-white px-6 py-3 rounded-full transition-colors">
@@ -326,7 +326,7 @@ export default function Home() {
             {/* Careers Card */}
             <div className="text-center">
               <div className="relative w-48 h-48 mx-auto mb-6">
-                <div className="absolute inset-0 bg-emerald-500 rounded-full"></div>
+                <div className="absolute inset-0 bg-[#E1957D] rounded-full"></div>
                 <img
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=2070"
                   alt="Team working"
@@ -351,9 +351,9 @@ export default function Home() {
         <div className="container mx-auto px-4">
           {/* Footer Main Sections */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Glovo Section */}
+            {/* Complete Market Section */}
             <div>
-              <h3 className="text-3xl font-bold mb-4 tracking-tight">Glovo</h3>
+              <h3 className="text-3xl font-bold mb-4 tracking-tight">Complete Market</h3>
               <p className="text-lg mb-4">Let’s do it together</p>
             </div>
 
@@ -382,7 +382,7 @@ export default function Home() {
                     href="#"
                     className="hover:text-[#E1957D] transition-colors"
                   >
-                    Glovo Prime
+                    Complete Market Prime
                   </a>
                 </li>
                 <li>
