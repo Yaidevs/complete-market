@@ -76,7 +76,7 @@ export default function Home() {
       <section className="bg-[#7B2CBF] text-white relative pb-24 md:pb-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <header className="flex justify-between items-center py-6">
-            <div className="text-[#E1957D] text-2xl  font-bold">
+            <div className="text-[#E1957D] text-2xl font-bold">
               Complete Market
             </div>
             <button className="bg-[#E1957D] text-white px-6 py-2.5 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#008f73]">
@@ -99,16 +99,33 @@ export default function Home() {
               <p className="text-xl font-medium">
                 Turkey, Meat, Fish, All Proteins!
               </p>
-              <div className="flex flex-wrap sm:flex-nowrap gap-2 bg-white rounded-full p-2 shadow-lg">
+              {/* Container hidden on small screens */}
+              <div className="hidden sm:flex flex-col sm:flex-row gap-4 bg-white text-black rounded-full p-4 shadow-lg">
                 <div className="flex-1 flex items-center gap-2 px-3">
                   <MapPin className="w-5 h-5 text-gray-400" />
                   <input
                     type="text"
                     placeholder="Where are you from Ibadan?"
-                    className="w-full text-sm outline-none placeholder-gray-500"
+                    className="w-full text-sm outline-none placeholder-black"
                   />
                 </div>
                 <button className="bg-[#E1957D] text-white px-6 py-3 rounded-full text-sm font-medium flex items-center gap-2">
+                  <MapPin className="w-4 h-4" /> Use current location
+                </button>
+              </div>
+              {/* Two-column layout for small screens */}
+              <div className="grid grid-cols-1 gap-4 sm:hidden">
+                {/* Input with padding and updated styles */}
+                <div className="flex items-center gap-2 px-4 py-3 bg-white text-gray-900 rounded-lg shadow-lg border border-gray-200">
+                  <MapPin className="w-5 h-5 text-gray-400" />
+                  <input
+                    type="text"
+                    placeholder="Where are you from Ibadan?"
+                    className="w-full text-sm outline-none placeholder-black"
+                  />
+                </div>
+                {/* Button with consistent design */}
+                <button className="bg-[#E1957D] text-white px-6 py-3 rounded-lg text-sm font-medium flex items-center gap-2 shadow-lg">
                   <MapPin className="w-4 h-4" /> Use current location
                 </button>
               </div>
@@ -211,21 +228,21 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-[#7B2CBF] rounded-[72px] mx-4 sm:mx-8 md:mx-12 lg:mx-20 my-8">
-  <div className="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 py-4">
-    <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-      <div className="flex-1 text-white">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold leading-tight mb-8">
-          Experience
-          <br />
-          the app
-          <br />
-          today!
+      <section className="relative overflow-hidden bg-[#7B2CBF] rounded-[64px] mx-4 sm:mx-6 md:mx-8 lg:mx-12 my-6 max-w-[1100px] lg:mx-auto py-4 md:py-6 lg:py-8">
+  <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-24">
+    <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6">
+      {/* Left Text Section */}
+      <div className="flex-1 text-white text-center lg:text-left lg:pl-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[5rem] font-bold leading-tight mb-3">
+          <span className="block mb-1 lg:mb-12">Experience</span>
+          <span className="block mb-1 lg:mb-12">the app</span>
+          <span className="block">today!</span>
         </h2>
-        <div className="flex flex-wrap gap-4">
-          <button className="bg-[#E1957D] hover:bg-gray-900 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-[30px] flex items-center gap-3 transition-all">
+
+        <div className="flex justify-center lg:justify-start gap-8 mt-8 lg:mt-24">
+          <button className="bg-[#E1957D]  text-white px-3 py-2 sm:px-5 sm:py-3 rounded-[16px] flex items-center gap-2 transition-all">
             <svg
-              className="w-6 h-6"
+              className="w-4 h-4"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -233,9 +250,9 @@ export default function Home() {
             </svg>
             App Store
           </button>
-          <button className="bg-[#E1957D] hover:bg-gray-900 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-[30px] flex items-center gap-3 transition-all">
+          <button className="bg-[#E1957D]  text-white px-3 py-2 sm:px-5 sm:py-3 rounded-[16px] flex items-center gap-2 transition-all">
             <svg
-              className="w-6 h-6"
+              className="w-4 h-4"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -246,25 +263,21 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Right Image Section */}
       <div className="flex-1 relative">
-        <div className="relative z-10 transform rotate-6">
+        <div className="relative z-10 transform rotate-0">
           <img
             src={app2}
             alt="Mobile app interface"
-            className="w-full max-w-[16rem] sm:max-w-[18rem] md:max-w-[20rem] lg:max-w-[24rem] mx-auto rounded-[40px] shadow-2xl"
+            className="w-full max-w-[10rem] sm:max-w-[12rem] md:max-w-[14rem] lg:max-w-[16rem] mx-auto rounded-[16px] shadow-xl"
           />
         </div>
       </div>
     </div>
   </div>
-
-  <div className="absolute inset-0">
-    <div className="absolute left-0 top-0 w-24 h-24 sm:w-32 sm:h-32 border-4 border-white/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-    <div className="absolute right-0 bottom-0 w-20 h-20 sm:w-24 sm:h-24 border-4 border-white/10 rounded-full translate-x-1/3 translate-y-1/3"></div>
-  </div>
 </section>
 
-      <section className="bg-[#f0f9f6] py-16">
+      <section className="bg-white py-16">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="w-16 h-16 mx-auto mb-6">
