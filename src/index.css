@@ -6,6 +6,16 @@
 @font-face{
     font-family: "Regular";
     src: local("Inter_24pt-Regular.ttf"),
-    url(' ./assets/Inter_24pt-Regular.ttf ') format("truetype");
+    url(' ./assets/fonts/Inter_24pt-Regular.ttf ') format("truetype");
 }
 
+@font-face{
+    font-family: "Medium";
+    src: local("Inter_24pt-Medium.ttf"),
+    url(' ./assets/fonts/Inter_24pt-Medium.ttf ') format("truetype");
+}
+@font-face{
+    font-family: "Bold";
+    src: local("Inter_24pt-Bold.ttf"),
+    url(' ./assets/fonts/Inter_24pt-Regular.ttf ') format("truetype");
+}
