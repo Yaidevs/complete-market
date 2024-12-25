@@ -100,7 +100,7 @@ export default function Home() {
                 Turkey, Meat, Fish, All Proteins!
               </p>
               {/* Container hidden on small screens */}
-              <div className="hidden sm:flex flex-col sm:flex-row gap-4 bg-white text-black  rounded-xl lg:rounded-full p-4 shadow-lg">
+              <div className="hidden sm:flex flex-col sm:flex-row gap-4 bg-white text-black  rounded-xl lg:rounded-full p-2 shadow-lg">
                 <div className="flex-1 flex items-center gap-2 px-3">
                   <MapPin className="w-5 h-5 text-gray-400" />
                   <input
