@@ -72,7 +72,7 @@ const proteins = [
 
 export default function Home() {
   return (
-    <main className="">
+    <main className=" font-poppins ">
       <section className="bg-[#7B2CBF] text-white relative pb-24 md:pb-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <header className="flex justify-between items-center py-6">
