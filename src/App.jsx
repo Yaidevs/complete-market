@@ -79,7 +79,7 @@ export default function Home() {
             <div className="text-[#E1957D] text-2xl font-bold">
               Complete Market
             </div>
-            <button className="bg-[#E1957D] text-white px-6 py-2.5 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#008f73]">
+            <button className="bg-[#E1957D] text-white px-6 py-2.5 rounded-full text-sm font-medium flex items-center gap-2">
               <User className="w-4 h-4" /> Login
             </button>
           </header>
@@ -100,16 +100,16 @@ export default function Home() {
                 Turkey, Meat, Fish, All Proteins!
               </p>
               {/* Container hidden on small screens */}
-              <div className="hidden sm:flex flex-col sm:flex-row gap-4 bg-white text-black rounded-full p-4 shadow-lg">
+              <div className="hidden sm:flex flex-col sm:flex-row gap-4 bg-white text-black  rounded-xl lg:rounded-full p-4 shadow-lg">
                 <div className="flex-1 flex items-center gap-2 px-3">
                   <MapPin className="w-5 h-5 text-gray-400" />
                   <input
                     type="text"
                     placeholder="Where are you from Ibadan?"
-                    className="w-full text-sm outline-none placeholder-black"
+                    className="w-full rounded-7xl text-sm outline-none placeholder-black"
                   />
                 </div>
-                <button className="bg-[#E1957D] text-white px-6 py-3 rounded-full text-sm font-medium flex items-center gap-2">
+                <button className="bg-[#E1957D] text-white px-6 py-3 lg:rounded-full text-sm font-medium flex items-center gap-2">
                   <MapPin className="w-4 h-4" /> Use current location
                 </button>
               </div>
@@ -228,14 +228,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-[#7B2CBF] rounded-[64px] mx-4 sm:mx-6 md:mx-8 lg:mx-12 my-6 max-w-[1100px] lg:mx-auto py-4 md:py-6 lg:py-8">
+      <section className="relative overflow-hidden bg-[#7B2CBF] rounded-[32px] lg:rounded-[64px] mx-4 sm:mx-6 md:mx-8 lg:mx-12 my-6 max-w-[1100px] lg:mx-auto py-4 md:py-6 lg:py-8">
   <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-24">
     <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6">
       {/* Left Text Section */}
       <div className="flex-1 text-white text-center lg:text-left lg:pl-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[5rem] font-bold leading-tight mb-3">
-          <span className="block mb-1 lg:mb-12">Experience</span>
-          <span className="block mb-1 lg:mb-12">the app</span>
+        <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-[5rem] font-bold leading-tight mb-3">
+          <span className="lg:block mb-1 lg:mb-12">Experience</span>
+          <span className="lg:block mb-1 lg:mb-12"> the app</span>
           <span className="block">today!</span>
         </h2>
 
